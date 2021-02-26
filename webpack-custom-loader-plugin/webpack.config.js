@@ -5,9 +5,9 @@ const HtmlPlugin = require("./plugins/HtmlPlugin")
 
 module.exports = {
     mode: "development",
-    entry: "./src/index.js",
+    entry: "./src/custom.js",
     output: {
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "../dist"),
         filename: "bundle.js"
     },
     module: {

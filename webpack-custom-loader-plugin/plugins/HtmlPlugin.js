@@ -11,7 +11,6 @@ class HtmlPlugin {
                     <script src="${filename}"></script>
                 </head>
                 <body>
-                    
                 </body>
             </html>`
             // Insert this html into the webpack build as a new file asset:

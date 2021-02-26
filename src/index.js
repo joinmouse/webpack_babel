@@ -1,8 +1,16 @@
-function demo() {
-    var a = 0
-    var b = 1
-    var c = 2
-    console.log(a, b, c)
+import imgFile1 from './img/1.png'
+import imgFile2 from './img/2.jpeg'
+import './style/style1.css'
+// import './style/style2.less'
+
+console.log("window.ENV", ENV)
+console.log("demo")
+
+function insertImg(imgFile) {
+    const img = new Image()
+    img.src = imgFile
+    document.body.appendChild(img)
 }
 
-demo()
+insertImg(imgFile1)
+insertImg(imgFile2)
