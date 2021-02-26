@@ -17,3 +17,10 @@ function insertImg(imgFile) {
 
 insertImg(imgFile1)
 insertImg(imgFile2)
+
+setTimeout(() => {
+    // import异步组件
+    import('./dynamic-data').then(res => {
+        console.log(res.data.message)
+    })
+}, 3000)

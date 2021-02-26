@@ -1,0 +1,1 @@
+(self.webpackChunkwebpack_babel=self.webpackChunkwebpack_babel||[]).push([[466],{466:(e,a,s)=>{"use strict";s.r(a),s.d(a,{default:()=>b});const b={message:"this is dynamic data"}}}]);
