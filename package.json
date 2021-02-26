@@ -8,6 +8,8 @@
     "scripts": {
         "dev:base": "webpack-dev-server --config webpack-base-conf/webpack.dev.js",
         "build:base": "webpack --config webpack-base-conf/webpack.prod.js",
+        "dev:adv": "webpack-dev-server --config webpack-adv-conf/webpack.dev.js",
+        "build:adv": "webpack --config webpack-adv-conf/webpack.prod.js",
         "build:custom": "webpack --config webpack-custom-loader-plugin/webpack.config.js"
     },
     "devDependencies": {
@@ -17,7 +19,6 @@
         "css-loader": "^5.1.0",
         "file-loader": "^6.2.0",
         "html-webpack-plugin": "^5.2.0",
-        "less-loader": "^8.0.0",
         "postcss-loader": "^5.0.0",
         "style-loader": "^2.0.0",
         "url-loader": "^4.1.1",

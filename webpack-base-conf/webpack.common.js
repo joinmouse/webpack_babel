@@ -18,26 +18,21 @@ module.exports = {
                 use: ["style-loader", "css-loader", "postcss-loader"],
                 exclude: /node_modules/
             },
-            // {
-            //     test: /\.less$/,
-            //     use: [
-            //         {
-            //           loader: "style-loader",
-            //         },
-            //         {
-            //           loader: "css-loader",
-            //         },
-            //         {
-            //             loader: "less-loader",
-            //             options: {
-            //                 lessOptions: {
-            //                     strictMath: true,
-            //                 }
-            //             }
-            //         }
-            //     ],
-            //     exclude: /node_modules/
-            // }
+            {
+                test: /\.sass$/,
+                use: [
+                    {
+                      loader: "style-loader",
+                    },
+                    {
+                      loader: "css-loader",
+                    },
+                    {
+                        loader: "sass-loader"
+                    }
+                ],
+                exclude: /node_modules/
+            }
         ]
     },
     plugins: [
